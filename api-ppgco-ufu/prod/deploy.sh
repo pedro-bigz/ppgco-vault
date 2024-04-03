@@ -6,9 +6,9 @@ git pull &&
 
 pnpm install &&
 
-rm -rf dist &&
+sudo rm -rf dist &&
 
-cp /var/www/ppgco-vault/api-ppgco-ufu/prod/.env.prod /var/www/prod/api-ppgco-ufu/.env &&
+sudo cp /var/www/ppgco-vault/api-ppgco-ufu/prod/.env.prod /var/www/prod/api-ppgco-ufu/.env &&
 
 pnpm build &&
 
