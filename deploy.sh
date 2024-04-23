@@ -6,4 +6,5 @@ git reset --hard origin/main &&
 git checkout main &&
 git pull origin main &&
 /bin/bash /var/www/ppgco-vault/$1-ppgco-ufu/prod/deploy.sh &&
+/bin/bash /var/www/ppgco-vault/restart-nginx.sh &&
 sudo chmod -R 755 /var/www
